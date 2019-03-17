@@ -220,7 +220,7 @@ let list =(
     </>
 )
 
-ReactDOM.render(<UnControl></UnControl>, document.getElementById('root'));
+ReactDOM.render(<Control></Control>, document.getElementById('root'));
 
 
 
