@@ -10,6 +10,8 @@ import TagList from './components/TagList'
 import ToduList from './components/ToduList'
 import Control from './components/Control'
 import UnControl from './components/UnControl'
+import Person from './components/Person'
+import ToduWrapper from './components/ToduWrapper'
 
 function test () {
     return 'wuhaolin'
@@ -220,7 +222,21 @@ let list =(
     </>
 )
 
-ReactDOM.render(<Control></Control>, document.getElementById('root'));
+// 我现在要往我这个Person组件里面传值,如果要传多个值最好以对象的形式进行传递
+const person = {
+    name: '杉杉',
+    age: 18,
+    sex: '女',
+    figure: {
+      weight: 95,
+      height: 165
+    },
+    hobby: ['读书', '看报'],
+    salary: 100000000
+}
+// 我传的时候我可以person = {person}这样传,但是我不想传过去是一个对象,就可以用解构的形式
+// ReactDOM.render(<Person {...person}></Person>, document.getElementById('root'));
 
+ReactDOM.render(<ToduWrapper></ToduWrapper>, document.getElementById('root'));
 
 

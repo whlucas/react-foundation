@@ -6,29 +6,29 @@ const person = {
     weight: 95,
     height: 165
   },
-  hobby: ['¶ÁÊé', '¿´±¨'],
+  hobby: ['ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½'],
   salary: 10000000
 }
 
 <>
-        <div> ¸öÈË×ÊÁÏ</div>
-        <div>ÄêÁä£º</div>
-        <div>ÐÔ±ð£º</div>
-        <div>Éí¸ß£º</div>
-        <div>ÌåÖØ£º</div>
-        <div>ÐËÈ¤£º</div>
-        <div>Ð½×Ê£º</div>
+        <div> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</div>
+        <div>ï¿½ï¿½ï¿½ä£º</div>
+        <div>ï¿½Ô±ï¿½</div>
+        <div>ï¿½ï¿½ï¿½ß£ï¿½</div>
+        <div>ï¿½ï¿½ï¿½Ø£ï¿½</div>
+        <div>ï¿½ï¿½È¤ï¿½ï¿½</div>
+        <div>Ð½ï¿½Ê£ï¿½</div>
       </>
 
 const { name, age, sex, figure, hobby, salary } = this.props
 
 <>
-        <div>{name} ¸öÈË×ÊÁÏ</div>
-        <div>ÄêÁä£º{ age }</div>
-        <div>ÐÔ±ð£º{ sex }</div>
-        <div>Éí¸ß£º{ figure.height }cm</div>
-        <div>ÌåÖØ£º{ figure.weight / 2 } kg</div>
-        <div>ÐËÈ¤£º{ hobby }</div>
-        <div>Ð½×Ê£º{ salary }/ÔÂ</div>
+        <div>{name} ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</div>
+        <div>ï¿½ï¿½ï¿½ä£º{ age }</div>
+        <div>ï¿½Ô±ï¿½{ sex }</div>
+        <div>ï¿½ï¿½ï¿½ß£ï¿½{ figure.height }cm</div>
+        <div>ï¿½ï¿½ï¿½Ø£ï¿½{ figure.weight / 2 } kg</div>
+        <div>ï¿½ï¿½È¤ï¿½ï¿½{ hobby }</div>
+        <div>Ð½ï¿½Ê£ï¿½{ salary }/ï¿½ï¿½</div>
       </>
 
