@@ -12,6 +12,7 @@ import Control from './components/Control'
 import UnControl from './components/UnControl'
 import Person from './components/Person'
 import ToduWrapper from './components/ToduWrapper'
+import LifeCycle from './components/LifeCycle'
 
 function test () {
     return 'wuhaolin'
@@ -237,6 +238,6 @@ const person = {
 // 我传的时候我可以person = {person}这样传,但是我不想传过去是一个对象,就可以用解构的形式
 // ReactDOM.render(<Person {...person}></Person>, document.getElementById('root'));
 
-ReactDOM.render(<ToduWrapper></ToduWrapper>, document.getElementById('root'));
+ReactDOM.render(<LifeCycle></LifeCycle>, document.getElementById('root'));
 
 
