@@ -1,0 +1,5 @@
+/* 为了不影响别的.content,这里把权重写的小一点 */
+.content {
+	margin: 10px 70px;
+	background-color: #fff;
+	}
