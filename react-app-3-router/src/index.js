@@ -7,7 +7,7 @@ import Home from './pages/home/Home';
 import Activities from './pages/activities/Activities';
 import Topics from './pages/topics/Topics';
 import Login from './pages/login/Login';
-
+import Article from './pages/article/Article'
 // import Nav from './components/nav/Nav'
 // 因为要都放到App里面去,所以引入App就可以了
 import App from './App';
@@ -49,12 +49,16 @@ ReactDOM.render(
 				<Switch >
 
 					{/* 我的这个每一个组件都应该放到一个文件夹里面去 */}
+					{/* path不写就默认跳转到根路径 */}
 
 					<Route path='/' exact component={Home}></Route>
 
 					<Route path='/activities' component={Activities}></Route>
 					<Route path='/topics' component={Topics}></Route>
 					<Route path='/login' component={Login}></Route>
+
+					{/* 我这里设置动态路由,路由后面需要跟一个id值,在路由后面加一个/:后面跟一个值的名字,这里我起名叫id */}
+					<Route path='/article/:id' component={Article}></Route>
 
 					<Redirect to='/'></Redirect>
 				</Switch>
