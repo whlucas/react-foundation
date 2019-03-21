@@ -1,6 +1,5 @@
-// 可以通过一些标志, 符号,图标直接进入到这个应用,相当于一种快捷方式
-// 这个没用,直接删掉就行,这个文件是从index.html页面引入的,在那里也直接删掉
 {
+  "introduce": "可以通过一些标志, 符号,图标直接进入到这个应用,相当于一种快捷方式,这个没用,直接删掉就行,这个文件是从index.html页面引入的,在那里也直接删掉",
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
@@ -15,3 +14,4 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+

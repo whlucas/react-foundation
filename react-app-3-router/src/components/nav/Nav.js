@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import {NavLink, Route, withRouter} from 'react-router-dom'
 
+import MenuLink from '../MenuLink'
+
 import './style.css'
 
 
@@ -15,10 +17,17 @@ class Nav extends Component {
 			<div className="nav">
 				{/* 我在这里实现一个点击span或者别的非link标签跳转,我先用onClick来实现 */}
 				<span className='logo' onClick={ this.handleClick }>跳个转~</span>
-				<NavLink to="/" exact>首页</NavLink>
-				<NavLink to="/activities">动态</NavLink>
-				<NavLink to="/topics">话题</NavLink>
-				<NavLink to="/login">登录</NavLink>
+
+				{/* 我现在不想让NavLink的默认是a标签了,我写了一个高阶组件MenuLink来替换这个NavLink */}
+				{/* <NavLink to="/" exact>首页</NavLink> */}
+				{/* <NavLink to="/activities">动态</NavLink> */}
+				{/* <NavLink to="/topics">话题</NavLink> */}
+				{/* <NavLink to="/login">登录</NavLink> */}
+
+				<MenuLink to="/" exact>首页</MenuLink>
+				<MenuLink to="/activities">动态</MenuLink>
+				<MenuLink to="/topics">话题</MenuLink>
+				<MenuLink to="/login">登录</MenuLink>
 			</div>
 		)
 	}

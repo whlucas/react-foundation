@@ -25,6 +25,7 @@ class AnotherChild extends React.Component{
 	// 写了这个组件里面就必须要有状态
 	// 这个必须有返回值
 	static getDerivedStateFromProps(props, state) { // 这个里面接收了两个参数,props代表当前属性的值,state代表当前状态的值 
+		// 这个里面第一次是取不到this的,不是很好使
 		console.log('3. getDerivedStateFromProps')
 		// 我在这个返回值里面就可以直接,往state上面挂载值了
 
