@@ -4,6 +4,9 @@
 // 引入所有东西命名为types
 import * as types from './actionTypes'
 
+// 我这里把两个组件所需要的东西都放到这个initState里面了,不太好
+// 我新建一个reducer文件夹,里面有一个index文件,作为入口文件,他最终要返回一个reducer给store里面的index.js用
+// 这个reducer里面的文件夹里面的,counter.js来放counter的数据,todoList里面放的是todoList的数据
 const initState = {
 	inpVal: '',
 	list: [],

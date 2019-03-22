@@ -4,7 +4,7 @@ import store from '../store/index' // 其实导入名字为index.js的文件直�
 import * as Types from '../store/actionTypes'
 
 // 导入我更改state里面值的方法
-import * as Actions from '../store/actionCreators'
+import * as Actions from '../store/actions/toduList'
 class ToduList extends Component {
 
 	// 我把这个里面的数据写到store里面,在这个里面直接掉store里面的数据
@@ -25,7 +25,7 @@ class ToduList extends Component {
 
 	// 我上面那么写就相当于下面这一行
 
-	state = store.getState()
+	state = store.getState().toduList
 
 	render() {
 
@@ -123,7 +123,7 @@ class ToduList extends Component {
 	handleStoreChange = () => {
 		// 在这个里面实现的功能就是重新的渲染一下我的这个页面
 		// 利用setState来跟新一下我的这个setState的值就可以了
-		this.setState(store.getState())
+		this.setState(store.getState().toduList);
 	}
 
 }
