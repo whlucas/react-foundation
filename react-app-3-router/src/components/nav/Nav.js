@@ -40,7 +40,7 @@ class Nav extends Component {
 		// 但是直接在App里面用Route包裹Nav不合理,我们需要在Nav组件里面去处理,返回一个包裹好的Nav组件
 		
 		// 我这里利用的是react给我们准备好的withRouter
-		// 就可以调用我的hidtory里面的方法进行跳转了
+		// 就可以调用我的history里面的方法进行跳转了
 		this.props.history.push('/')
 	}
 
